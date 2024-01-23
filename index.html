@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .mondrian-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 3px;
+      width: 500px;
+      height: 500px;
+    }
+
+    .rectangle {
+      background-color: white;
+      border: 2px solid black;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .rectangle.large {
+      grid-column: span 3;
+      grid-row: span 3;
+    }
+
+    .rectangle.medium {
+      grid-column: span 2;
+    }
+
+    .rectangle.small {
+      grid-row: span 2;
+    }
+
+    .rectangle.tall {
+      grid-row: span 3;
+    }
+
+    .rectangle.wide {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="mondrian-container">
+    <div class="rectangle red large"></div>
+    <div class="rectangle blue"></div>
+    <div class="rectangle yellow"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle red medium"></div>
+    <div class="rectangle yellow"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle blue"></div>
+    <div class="rectangle yellow wide"></div>
+    <div class="rectangle yellow"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle medium"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle black"></div>
+    <div class="rectangle blue"></div>
+    <div class="rectangle"></div>
+    <div class="rectangle tall"></div>
+    <div class="rectangle"></div>
+  </div>
+</body>
+</html>
